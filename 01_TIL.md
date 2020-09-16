@@ -161,11 +161,18 @@ Changes not staged for commit: (commint 하기 위해 변화들이 git에 추가
 * 되돌아 오기
   * git checkout master ( 원래 작업하던 커밋상태로 돌아옴 )
 
+### (2) 파일 이름을 수정하거나, 삭제했을 때
+
+* git add -u : 없어진 파일이나 이름이 바뀐 파일을 인식하지 못하기 때문에 수정된 파일들을 추가하고 싶을 경우 사용한다.
+* git add . : .현재 폴더 내부의 모든 변화를 git에 추가한다.
+
 
 
 # 원격저장소
 
 ### (1) git remote add + 저장소의 이름 + 저장소의 URL
+
+* 저장소의 이름을 모를 경우에 처음에 등록할 때만 git remote add를 사용한다.
 
 * 저장소의 이름 : origin
 * git remote add origin https://github.com/lby5293/TIL.git
@@ -180,7 +187,7 @@ Changes not staged for commit: (commint 하기 위해 변화들이 git에 추가
 
 ### (4) git remote remove + 저장소이름
 
-
+* 저장소 정보를 삭제한다.
 
 ## 실습2 - http://bit.do/01_TIL
 
